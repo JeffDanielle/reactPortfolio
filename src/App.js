@@ -5,6 +5,9 @@ import NavigationBar from './components/Navbar';
 import Button from 'react-bootstrap/Button'
 import "bootstrap/dist/css/bootstrap.min.css"
 import AboutPage from './components/AboutPage';
+import WorkPage from './components/WorkPage';
+
+
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
         <NavigationBar></NavigationBar>
         <LandingPage></LandingPage>
         <AboutPage></AboutPage>
+        <WorkPage></WorkPage>
       </Router>
     </div>
   );
