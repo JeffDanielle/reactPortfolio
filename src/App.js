@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 import "bootstrap/dist/css/bootstrap.min.css"
 import AboutPage from './components/AboutPage';
 import WorkPage from './components/WorkPage';
+import ContactPage from './components/ContactPage';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <LandingPage></LandingPage>
         <AboutPage></AboutPage>
         <WorkPage></WorkPage>
+        <ContactPage></ContactPage>
       </Router>
     </div>
   );

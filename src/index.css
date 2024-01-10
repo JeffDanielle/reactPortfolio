@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -27,3 +28,28 @@ body.dark-theme {
 /* .subtxt {
   font-weight: bold;
 } */
+
+
+#home {
+  height: 100vh;
+}
+
+#about {
+  height: 100vh;
+}
+
+#myworks {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#profile-img {
+  width: 35%;
+}
+
+#tool-img {
+  width: 15%;
+}

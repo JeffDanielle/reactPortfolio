@@ -6,7 +6,7 @@ const NavigationBar = () => {
     return ( 
        
       // <div className='d-flex justify-content-end fs-2 '>
-        <Nav className=" d-flex justify-content-end fs-2 px-5 mt-2 border-bottom" activeKey="/home">
+        <Nav className=" d-flex justify-content-end fs-2 px-5 mt-1 border-bottom" activeKey="/home">
           <Nav.Item>
             <Nav.Link href="#home" className='text-white mx-3' >About</Nav.Link>
           </Nav.Item>
