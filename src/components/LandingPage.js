@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 const homepage = () => {
     return ( 
         <section id="home" className='mt-3'>
-        <Container className='border-bottom'>
+        <Container className=''>
             <Row className="d-flex justify-content-evenly align-items-center">
                 <Col xs="auto" className="mr-3">
                 <Image src={BgImage} alt="background_image" className='mt-1' />

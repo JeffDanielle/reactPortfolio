@@ -4,6 +4,13 @@ import Col from 'react-bootstrap/Col';
 import FormalImg from '../images/formal.jpg'
 import ReactImg from '../images/science.png'
 import BootImg from '../images/bootstrap.png'
+import GitImg from '../images/github.png'
+import HtmlImg from '../images/html-5.png'
+import JsImg from '../images/js.png'
+import VueImg from '../images/vueJs.png'
+
+
+
 import Image from 'react-bootstrap/Image'
 
 
@@ -41,9 +48,17 @@ const aboutPage = () => {
                         than using vanilla CSS.
                     </p>
                 </Col>
-                <Col className=''>
-                    <Image src={ReactImg} id='tool-img' alt="react_image" className='' />
-                    <Image src={BootImg} id='tool-img' alt="tool_image" className='' />
+                <Col className='mt-5'>
+                        <div className='mb-4'>
+                            <Image src={ReactImg} id='tool-img' alt="react_image" className='ms-4' />
+                            <Image src={BootImg} id='tool-img' alt="bootstrap_image" className='ms-4' />
+                            <Image src={GitImg} id='tool-img' alt="git_image" className='ms-4' />
+                        </div>
+                        <div>
+                            <Image src={HtmlImg} id='tool-img' alt="html_image" className='ms-4' />
+                            <Image src={JsImg} id='tool-img' alt="js_image" className='ms-4' />
+                            <Image src={VueImg} id='tool-img' alt="js_image" className='ms-4' />
+                        </div>
                 </Col>
             </Row>
         </Container>

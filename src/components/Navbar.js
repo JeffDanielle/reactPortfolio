@@ -1,20 +1,19 @@
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
 const NavigationBar = () => {
     return ( 
        
       // <div className='d-flex justify-content-end fs-2 '>
-        <Nav className=" d-flex justify-content-end fs-2 px-5 mt-1 border-bottom" activeKey="/home">
+        <Nav className=" d-flex justify-content-end fs-2 px-5 mt-1" activeKey="/home">
           <Nav.Item>
-            <Nav.Link href="#home" className='text-white mx-3' >About</Nav.Link>
+            <Nav.Link href="#about" className='text-white mx-3 fw-bold' >About</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1" className='text-white mx-3'>Work</Nav.Link>
+            <Nav.Link href="#myworks" className='text-white mx-3 fw-bold'>Work</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2" className='text-white mx-3'>Contact</Nav.Link>
+            <Nav.Link href="#contact" className='text-white mx-3 fw-bold'>Contact</Nav.Link>
           </Nav.Item>
         </Nav>
       // </div>
