@@ -40,7 +40,7 @@ body.dark-theme {
 }
 
 #myworks {
-  height: 100vh;
+  height: 150vh;
 }
 
 #contact {
@@ -53,4 +53,14 @@ body.dark-theme {
 
 #tool-img {
   width: 13%;
+}
+
+#projects-img {
+  opacity: 0.4;
+  transition-timing-function: ease-in;
+  transition: 1s;
+}
+
+#projects-img:hover {
+  opacity: 1;
 }
