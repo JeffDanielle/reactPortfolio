@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import AboutPage from './components/AboutPage';
 import WorkPage from './components/WorkPage';
 import ContactPage from './components/ContactPage';
+import Footer from './components/Footer';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <AboutPage></AboutPage>
         <WorkPage></WorkPage>
         <ContactPage></ContactPage>
+        <Footer></Footer>
       </Router>
     </div>
   );

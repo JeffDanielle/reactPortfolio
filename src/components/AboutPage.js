@@ -16,7 +16,7 @@ import Image from 'react-bootstrap/Image'
 
 const aboutPage = () => {
     return ( 
-    <section id='about'>
+    <section id='about' className='ms-5'>
        <h1 className='pt-1 pb-5 fw-bold'>About Me</h1>
        <Container className='mt-4'>
             <Row className="">

@@ -64,3 +64,14 @@ body.dark-theme {
 #projects-img:hover {
   opacity: 1;
 }
+
+#contact-img {
+  width: 3%;
+  opacity: 0.6;
+  transition-timing-function: ease-in;
+  transition: 1s;
+}
+
+#contact-img:hover {
+  opacity: 1;
+}
