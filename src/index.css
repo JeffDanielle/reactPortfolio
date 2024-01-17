@@ -65,8 +65,12 @@ body.dark-theme {
   opacity: 1;
 }
 
+#container {
+  height: 58%;
+}
+
 #contact-img {
-  width: 3%;
+  width: 8%;
   opacity: 0.6;
   transition-timing-function: ease-in;
   transition: 1s;

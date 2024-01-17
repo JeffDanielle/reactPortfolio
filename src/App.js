@@ -20,7 +20,7 @@ function App() {
         <AboutPage></AboutPage>
         <WorkPage></WorkPage>
         <ContactPage></ContactPage>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </Router>
     </div>
   );
