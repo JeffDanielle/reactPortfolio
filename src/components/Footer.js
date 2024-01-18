@@ -3,6 +3,8 @@ import LinkedImg from '../images/linkedin.png'
 import GitImg from '../images/github.png'
 import WhatsappImg from '../images/whatsapp.png'
 import { Link } from 'react-router-dom'
+import SmartphoneImg from '../images/smartphone.png'
+
 
 
 const Footer = () => {
@@ -20,7 +22,7 @@ const Footer = () => {
                 </Link>
             </div>
             <ul className='d-flex list-unstyled mt-4 px-1 fs-6'>
-                <li className='px-3 text-nowrap'>Contact no: 09560424087</li>
+                <li className='px-3 text-nowrap'><Image src={SmartphoneImg} id='contact-img' className='ms-4' alt='phone-thumbnail' /></li>
                 <li className='px-3 text-nowrap'>(C)2024 Jeff Bayot</li>
             </ul>
         </div>
