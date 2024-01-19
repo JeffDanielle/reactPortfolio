@@ -38,6 +38,7 @@ const ContactPage = () => {
     return ( 
         <section id='contact'>
             <h1 className="fw-bold mt-5 pt-5">Email Me</h1>
+            {/* Form for emailJs */}
             <Container className='mt-5'>
                 <Row className="justify-content-md-center">
                     <Col md={6}>
