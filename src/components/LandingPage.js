@@ -8,16 +8,16 @@ const homepage = () => {
     return ( 
         <section id="home" className='mt-3'>
         <Container className=''>
-            <Row className="d-flex justify-content-evenly align-items-center">
-                <Col xs="auto" className="mr-3">
-                <Image src={BgImage} alt="background_image" className='mt-1' />
-                </Col>
-                <Col className='ms-5 text-start'>
-                    <p className="text_header fs-1 fw-bold mb-3"><span className="txt_Hello">Hello</span>, I'm Jeff!</p>
-                    <p className="bg-warning text-dark fs-1 fw-bold text-left d-inline-block py-2 px-3"> Crafting things for the web </p>
-                </Col>
-            </Row>
-        </Container>
+        <Row className="d-flex justify-content-evenly align-items-center">
+            <Col xs={6} sm={6} md={4} className="mb-3 mb-md-0">
+                <Image src={BgImage} alt="background_image" className='w-100' />
+            </Col>
+            <Col xs={12} sm={6} md={6} className='px-1 ms-md-5 text-start flex-sm-wrap col-lg'>
+                <p className="text_header fs-1 fw-bold mb-3"><span className="txt_Hello">Hello</span>, I'm Jeff!</p>
+                <p className="bg-warning text-dark fs-1 fw-bold text-left d-inline-block py-2 px-3"> Crafting things for the web </p>
+            </Col>
+        </Row>
+    </Container>
     </section>
      );
 }
