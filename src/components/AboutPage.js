@@ -19,7 +19,7 @@ const aboutPage = () => {
     <section id='about' className='ms-5'>
        <h1 className='pt-1 pb-5 fw-bold'>About Me</h1>
        <Container className='mt-4'>
-            <Row className="">
+            <Row className="align-items-center">
                 <Col xs={12} md={6} lg={6} className="px-4">
                      <h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>Who's this guy behind these codes?</h3>
                       <p className='mt-4 fw-bold text-start'>My name is Jeff Danielle E. Bayot, I'm a fresh graduate at Ateneo de Naga University.
@@ -38,7 +38,7 @@ const aboutPage = () => {
         </Container>
        <Container className=''>
             <Row className='mt-5'>
-                <Col xs={12} md={6} lg={6} className=''>
+                <Col xs={12} md={6} lg={6}  className=''>
                      <h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>What does he do?</h3>
                      <p className='mt-4 fw-bold text-start'>I usually work with front-end <strong>Html, Javascript, and CSS.</strong> On our capstone
                         project "Classroomify", to make our web application aesthetically pleasing we utilized Tailwind
@@ -48,14 +48,14 @@ const aboutPage = () => {
                         than using vanilla CSS.
                     </p>
                 </Col>
-                <Col className='mt-5'>
+                <Col xs={10} md={6} lg={6} className='mt-5 text-center'>
                         <div className='mb-4'>
-                            <Image src={ReactImg} id='tool-img' alt="react_image" className='ms-4' />
+                            <Image src={ReactImg} id='tool-img' alt="react_image" className='' />
                             <Image src={BootImg} id='tool-img' alt="bootstrap_image" className='ms-4' />
                             <Image src={GitImg} id='tool-img' alt="git_image" className='ms-4' />
                         </div>
-                        <div>
-                            <Image src={HtmlImg} id='tool-img' alt="html_image" className='ms-4' />
+                        <div className=''> 
+                            <Image src={HtmlImg} id='tool-img' alt="html_image" className='' />
                             <Image src={JsImg} id='tool-img' alt="js_image" className='ms-4' />
                             <Image src={VueImg} id='tool-img' alt="js_image" className='ms-4' />
                         </div>

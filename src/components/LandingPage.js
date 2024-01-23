@@ -6,9 +6,9 @@ import Col from 'react-bootstrap/Col';
 
 const homepage = () => {
     return ( 
-        <section id="home" className='mt-3'>
+        <section id="home" className='mt-3' style={{ minHeight: '100vh'}}>
         <Container className=''>
-        <Row className="d-flex justify-content-evenly align-items-center">
+        <Row className="d-flex justify-content-center align-items-center">
             <Col xs={6} sm={6} md={4} className="mb-3 mb-md-0">
                 <Image src={BgImage} alt="background_image" className='w-100' />
             </Col>
