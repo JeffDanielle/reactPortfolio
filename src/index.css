@@ -80,3 +80,7 @@ body.dark-theme {
 #contact-img:hover {
   opacity: 1;
 }
+
+#list-img {
+  width: 10%;
+}

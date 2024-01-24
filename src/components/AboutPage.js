@@ -16,23 +16,17 @@ import Image from 'react-bootstrap/Image'
 
 const aboutPage = () => {
     return ( 
-    <section id='about' className='ms-5'>
+    <section id='about' className='' style={{ minHeight: '100vh'}}>
        <h1 className='pt-1 pb-5 fw-bold'>About Me</h1>
        <Container className='mt-4'>
             <Row className="align-items-center">
-                <Col xs={12} md={6} lg={6} className="px-4">
-                     <h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>Who's this guy behind these codes?</h3>
-                      <p className='mt-4 fw-bold text-start'>My name is Jeff Danielle E. Bayot, I'm a fresh graduate at Ateneo de Naga University.
-                        I'm an aspiring front-end web developer residing at Camarines
-                        Sur, Naga City
-                    </p>
-                    <p className='mt-4 fw-bold text-start'>I am passionate of implementing designs from prototype to a fully responsive
-                        websites; I
-                        found joy fixing UI designs to make it usable & user-friendly to the users.
-                    </p>
+                <Col xs={12} md={6} lg={6} className="px-4=">
+                    <h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>Who's this guy behind these codes?</h3>
+                    <p className='mt-4 fw-bold text-start'>My name is Jeff Danielle E. Bayot, I'm a fresh graduate at Ateneo de Naga University. I'm an aspiring front-end web developer residing in Camarines Sur, Naga City.</p>
+                    <p className='mt-4 fw-bold text-start'>I am passionate about implementing designs from prototype to a fully responsive website; I found joy fixing UI designs to make it usable & user-friendly to the users.</p>
                 </Col>
-                <Col className='d-flex align-items-center justify-content-center'>
-                     <Image src={FormalImg} id='profile-img' alt="profile_image" className='img-thumbnail' />
+                <Col xs={12} md={6} lg={6} className='d-flex align-items-center justify-content-center'>
+                    <Image src={FormalImg} id='profile-img' alt="profile_image" className='img-thumbnail' />
                 </Col>
             </Row>
         </Container>
@@ -48,13 +42,12 @@ const aboutPage = () => {
                         than using vanilla CSS.
                     </p>
                 </Col>
-                <Col xs={10} md={6} lg={6} className='mt-5 text-center'>
+                <Col xs={12} md={6} lg={6} className='mt-5 d-flex align-items-center flex-wrap text-center'>
                         <div className='mb-4'>
-                            <Image src={ReactImg} id='tool-img' alt="react_image" className='' />
-                            <Image src={BootImg} id='tool-img' alt="bootstrap_image" className='ms-4' />
-                            <Image src={GitImg} id='tool-img' alt="git_image" className='ms-4' />
-                        </div>
-                        <div className=''> 
+                            <Image src={ReactImg} id='tool-img' alt="react_image" className='mb-4' />
+                            <Image src={BootImg} id='tool-img' alt="bootstrap_image" className='ms-4 mb-4' />
+                            <Image src={GitImg} id='tool-img' alt="git_image" className='ms-4 mb-4' />
+                            <div></div>
                             <Image src={HtmlImg} id='tool-img' alt="html_image" className='' />
                             <Image src={JsImg} id='tool-img' alt="js_image" className='ms-4' />
                             <Image src={VueImg} id='tool-img' alt="js_image" className='ms-4' />
