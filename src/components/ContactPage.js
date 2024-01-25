@@ -63,26 +63,26 @@ const ContactPage = () => {
                 </Row>
         </Container>
         {/* below code is the footer */}
-        <Container className='d-flex'>
-                <Col xs={0} lg={6}>
-                    <div className='text-start d-sm-flex flex-sm-wrap d-lg-block'>
-                        <Link to='https://www.linkedin.com/in/jeff-danielle-bayot/' target='_blank'>
-                            <Image src={LinkedImg} id='contact-img' className='' alt='linkedin-thumbnail' />
-                        </Link>
-                        <Link to='https://github.com/JeffDanielle' target='_blank'>
-                            <Image src={GitImg} id='contact-img' className='ms-4' alt='Github-thumbnail' />
-                        </Link>
-                        <Link to='https://api.whatsapp.com/send/?phone=%2B639560424087&text&type=phone_number&app_absent=0' target='_blank'>
-                            <Image src={WhatsappImg} id='contact-img' className='ms-4' alt='Whatsapp-thumbnail' />
-                        </Link>
-                    </div>
-                </Col>
-                <Col xs={10} lg={6} className='d-flex'>
-                    <ul className='d-flex flex-wrap flex-wrap-sm flex-lg-nowrap list-unstyled fs-6'>
-                        <li className='px-3 text-nowrap'><Image src={SmartphoneImg} id='list-img' className='' alt='phone-thumbnail' /> :09560424087</li>
-                        <li className='px-3 text-nowrap'><Image src={CopyrightImg} id='list-img' className='' alt='phone-thumbnail' /> 2024 Jeff Bayot</li>
-                    </ul>
-                </Col>
+         <Container className='d-sm-flex flex-sm-column flex-lg-row'>
+            <Col xs={10} lg={6} className='d-sm-flex flex-sm-row mb-3'>
+                <div className=''>
+                    <Link to='https://www.linkedin.com/in/jeff-danielle-bayot/' target='_blank'>
+                        <Image src={LinkedImg} id='contact-img' className='img-fluid col-1' alt='linkedin-thumbnail' />
+                    </Link>
+                    <Link to='https://github.com/JeffDanielle' target='_blank'>
+                        <Image src={GitImg} id='contact-img' className='img-fluid col-1 ms-4' alt='Github-thumbnail' />
+                    </Link>
+                    <Link to='https://api.whatsapp.com/send/?phone=%2B639560424087&text&type=phone_number&app_absent=0' target='_blank'>
+                        <Image src={WhatsappImg} id='contact-img' className='img-fluid col-1 ms-4' alt='Whatsapp-thumbnail' />
+                    </Link>
+                </div>
+            </Col>
+            <Col xs={10} lg={6} className='d-flex'>
+                <ul className='d-flex flex-column flex-sm-row flex-lg-nowrap list-unstyled fs-6'>
+                <li className='px-3 text-nowrap'><Image src={SmartphoneImg} id='list-img' className='' alt='phone-thumbnail' /> :09560424087</li>
+                <li className='px-3 text-nowrap'><Image src={CopyrightImg} id='list-img' className='' alt='phone-thumbnail' /> 2024 Jeff Bayot</li>
+                </ul>
+            </Col>
         </Container>
         </section>
      );
