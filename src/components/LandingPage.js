@@ -14,7 +14,7 @@ const homepage = () => {
             </Col>
             <Col xs={12} sm={6} md={12} lg={7.5} className='px-1 ms-md-5 text-start flex-sm-wrap col-lg'>
                 <p className="text_header fs-1 fw-bold mb-3"><span className="txt_Hello ">Hello</span>, I'm Jeff!</p>
-                <p className="bg-warning text-dark fs-1 fw-bold text-left d-inline-block py-2 px-3"> Crafting things for the web </p>
+                <p className="bg-warning text-dark fs-1 fw-bold text-left d-inline-block py-2 px-3"> Crafting things for the web.</p>
             </Col>
         </Row>
     </Container>
