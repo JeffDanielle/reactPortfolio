@@ -71,7 +71,7 @@ const ContactPage = () => {
         </Container>
         {/* below code is the footer */}
          <Container className='d-sm-flex flex-sm-column flex-lg-row'>
-            <Col xs={10} lg={6} className='d-sm-flex flex-sm-row mb-2 justify-content-center justify-content-lg-start ms-3 ms-md-0 ms-lg-0'>
+            <Col xs={10} lg={6} className='d-sm-flex flex-sm-row mb-2 justify-content-center justify-content-lg-start ms-3 ms-md-5 ms-lg-0'>
                 <div className=''>
                     <Link to='https://www.linkedin.com/in/jeff-danielle-bayot/' target='_blank'>
                         <Image src={LinkedImg} id='contact-img' className='img-fluid col-1' alt='linkedin-thumbnail' />
