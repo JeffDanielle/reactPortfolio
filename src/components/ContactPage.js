@@ -8,6 +8,7 @@ import SmartphoneImg from '../images/mobile-phone.png'
 import CopyrightImg from '../images/copyright.png';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 
 const ContactPage = () => {
@@ -27,7 +28,13 @@ const ContactPage = () => {
         .then(
             (result) => {
             console.log(result.text);
-            console.log('message sent!');
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Email Sent!",
+                showConfirmButton: false,
+                timer: 1500
+            });
             e.target.reset();
         }, 
         (error) => {
