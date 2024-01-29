@@ -31,7 +31,7 @@ const aboutPage = () => {
             </Row>
         </Container>
        <Container className=''>
-            <Row className='mt-5'>
+            <Row className='mt-5 flex-column-reverse flex-md-row flex-lg-row'>
                 <Col xs={12} md={6} lg={6}  className=''>
                      <h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>What does he do?</h3>
                      <p className='mt-4 fw-bold text-start'>I usually work with front-end <strong>Html, Javascript, and CSS.</strong> On our capstone
@@ -42,7 +42,7 @@ const aboutPage = () => {
                         than using vanilla CSS.
                     </p>
                 </Col>
-                <Col xs={12} md={6} lg={6} className='mt-5 d-flex align-items-center flex-wrap text-center'>
+                <Col xs={12} md={6} lg={6} className='mt-5 d-flex align-items-center flex-wrap text-center mb-2 mb-md-0 mb-lg-0'>
                         <div className='mb-4'>
                             <Image src={ReactImg} id='tool-img' alt="react_image" className='mb-4' />
                             <Image src={BootImg} id='tool-img' alt="bootstrap_image" className='ms-4 mb-4' />

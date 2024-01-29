@@ -71,7 +71,7 @@ const ContactPage = () => {
         </Container>
         {/* below code is the footer */}
          <Container className='d-sm-flex flex-sm-column flex-lg-row'>
-            <Col xs={10} lg={6} className='d-sm-flex flex-sm-row mb-3'>
+            <Col xs={10} lg={6} className='d-sm-flex flex-sm-row mb-2 justify-content-center justify-content-lg-start ms-3 ms-md-0 ms-lg-0'>
                 <div className=''>
                     <Link to='https://www.linkedin.com/in/jeff-danielle-bayot/' target='_blank'>
                         <Image src={LinkedImg} id='contact-img' className='img-fluid col-1' alt='linkedin-thumbnail' />
@@ -84,7 +84,7 @@ const ContactPage = () => {
                     </Link>
                 </div>
             </Col>
-            <Col xs={10} lg={6} className='d-flex'>
+            <Col xs={10} lg={6} className='d-flex align-items-center ms-3 ms-mb-0 ms-lg-0'>
                 <ul className='d-flex flex-column flex-sm-row flex-lg-nowrap list-unstyled fs-6'>
                 <li className='px-3 text-nowrap'><Image src={SmartphoneImg} id='list-img' className='' alt='phone-thumbnail' /> :09560424087</li>
                 <li className='px-3 text-nowrap'><Image src={CopyrightImg} id='list-img' className='' alt='phone-thumbnail' /> 2024 Jeff Bayot</li>
