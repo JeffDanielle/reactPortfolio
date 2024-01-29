@@ -72,7 +72,7 @@ body.dark-theme {
 
 #contact-img {
   width: 100%;
-  max-width: 50px;
+  max-width: 35px;
   height: auto;
   opacity: 0.6;
   transition-timing-function: ease-in;
