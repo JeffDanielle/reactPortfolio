@@ -20,7 +20,7 @@ const aboutPage = () => {
        <Container className='mt-4'>
             <Row className="flex-column-reverse flex-md-row flex-lg-row align-items-center ">
                 <Col xs={12} md={6} lg={6} className="px-4">
-                    <motion.h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline' initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ delay: 1.5 }}>Who's this guy behind these codes?</motion.h3>
+                    <motion.h3 className='bg-warning text-black fs-4 fw-bold text-decoration-underline'>Who's this guy behind these codes?</motion.h3>
                     <p className='mt-4 fw-bold text-start'>My name is Jeff Danielle E. Bayot, I'm a fresh graduate at Ateneo de Naga University. I'm an aspiring front-end web developer residing in Camarines Sur, Naga City.</p>
                     <p className='mt-4 fw-bold text-start'>I am passionate about implementing designs from prototype to a fully responsive website; I found joy fixing UI designs to make it usable & user-friendly to the users.</p>
                 </Col>
