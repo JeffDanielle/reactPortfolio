@@ -85,7 +85,7 @@ const ContactPage = () => {
                 </div>
             </Col>
             <Col xs={10} lg={6} className='d-flex align-items-center ms-3 ms-mb-0 ms-lg-0'>
-                <ul className='d-flex flex-column flex-sm-row flex-lg-nowrap list-unstyled fs-6'>
+                <ul className='d-flex flex-column flex-sm-row flex-lg-nowrap list-unstyled fs-6 mt-md-3'>
                 <li className='px-3 text-nowrap'><Image src={SmartphoneImg} id='list-img' className='' alt='phone-thumbnail' /> :09560424087</li>
                 <li className='px-3 text-nowrap'><Image src={CopyrightImg} id='list-img' className='' alt='phone-thumbnail' /> 2024 Jeff Bayot</li>
                 </ul>

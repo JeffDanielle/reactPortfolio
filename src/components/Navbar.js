@@ -6,13 +6,15 @@ import logoImg from '../images/logo.png'
 const NavigationBar = () => {
     return ( 
       <Navbar id='home' bg="dark" variant='dark' expand='lg'>
-      <Container className="d-flex">
-        <Col xs={1}>
-        <Navbar.Brand href='#home' className='text-start ms-lg-4'>
-          <Image src={logoImg} className='rounded-5' id='logo-img' />
-        </Navbar.Brand>
+      <Container className="d-flex align-items-center p-s-0 p-md-0">
+        <Col xs={1} sm={1} md={1} className=''>
+          <Navbar.Brand href='#home' className='ms-lg-4'>
+            <Image src={logoImg} className='rounded-5' id='logo-img' />
+          </Navbar.Brand>
         </Col>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' className='me-2 ms-md-auto' />
+        <Col xs={1.5} sm={1} md={1} className=''>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' className='py-1 px-1' />
+        </Col>
       </Container>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fs-3 me-3">
           <Nav className=''>
