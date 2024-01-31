@@ -10,7 +10,7 @@ const homepage = () => {
         <section id="home" className='mt-3' style={{ minHeight: '100vh'}}>
         <Container className=''>
         <Row className="d-flex justify-content-center align-items-center">
-            <Col xs={12} sm={6} md={6} lg={4} className="mb-3 mb-md-5">
+            <Col xs={8} sm={6} md={4} lg={4} className="mb-3 mb-md-5">
                 <motion.div initial={{opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 2 }} ><Image src={BgImage} alt="background_image" className='w-100' /></motion.div>
             </Col>
             <Col xs={12} sm={6} md={12} lg={7.5} className='px-1 ms-md-5 text-start flex-sm-wrap col-lg'>

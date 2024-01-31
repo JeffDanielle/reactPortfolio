@@ -51,6 +51,12 @@ body.dark-theme {
   width: 35%;
 }
 
+#logo-img {
+  width: 50%;
+  max-width: 65px;
+  min-width: 55px;
+}
+
 #tool-img {
   width: 13%;
 }

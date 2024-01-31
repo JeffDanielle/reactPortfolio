@@ -1,13 +1,21 @@
-import { Nav, Navbar} from 'react-bootstrap';
+import { Container, Nav, Navbar, Col} from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
+import logoImg from '../images/logo.png'
 // import React, { useState } from 'react';
 
 const NavigationBar = () => {
     return ( 
-      <Navbar bg="dark" variant='dark' expand='lg'>
-        <Navbar.Brand className='ms-3'>Your Logo</Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' className='me-2' />
+      <Navbar id='home' bg="dark" variant='dark' expand='lg'>
+      <Container className="d-flex">
+        <Col xs={1}>
+        <Navbar.Brand href='#home' className='text-start ms-lg-4'>
+          <Image src={logoImg} className='rounded-5' id='logo-img' />
+        </Navbar.Brand>
+        </Col>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' className='me-2 ms-md-auto' />
+      </Container>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fs-3 me-3">
-          <Nav>
+          <Nav className=''>
            <Nav.Link href="#about" className='mx-3 fw-bold'>About</Nav.Link>
            <Nav.Link href="#myworks" className='mx-3 fw-bold'>Work</Nav.Link>
            <Nav.Link href="#contact" className='mx-3 fw-bold'>Contact</Nav.Link>

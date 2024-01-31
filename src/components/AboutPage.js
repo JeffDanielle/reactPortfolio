@@ -16,7 +16,7 @@ const aboutPage = () => {
     
     return ( 
     <section id='about' className='' style={{ minHeight: '100vh'}}>
-       <h1 className='pt-1 pb-5 fw-bold'>About Me</h1>
+       <h1 className='pt-1 pt-md-5 pb-5 fw-bold'>About Me</h1>
        <Container className='mt-4'>
             <Row className="flex-column-reverse flex-md-row flex-lg-row align-items-center ">
                 <Col xs={12} md={6} lg={6} className="px-4">
