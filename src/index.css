@@ -55,6 +55,13 @@ body.dark-theme {
   width: 50%;
   max-width: 65px;
   min-width: 55px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+#logo-img:hover {
+  opacity: 1;
 }
 
 #tool-img {
@@ -67,9 +74,12 @@ body.dark-theme {
 
 #projects-img {
   width: 100%;
+  max-height: 250px;
+  min-height: 150px;
   opacity: 0.4;
   transition-timing-function: ease-in;
   transition: 1s;
+  object-fit: cover;
 }
 
 #projects-img:hover {
