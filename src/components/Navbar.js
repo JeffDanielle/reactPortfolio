@@ -1,7 +1,6 @@
 import { Container, Nav, Navbar, Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import logoImg from '../images/logo.png'
-import { motion } from 'framer-motion';
 // import React, { useState } from 'react';
 
 const NavigationBar = () => {
