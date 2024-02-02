@@ -5,7 +5,7 @@ import logoImg from '../images/logo.png'
 
 const NavigationBar = () => {
     return ( 
-      <Navbar id='home' bg="dark" variant='dark' expand='lg' >
+      <Navbar id='home' bg="dark" variant='dark' expand='lg' className='hide-navbar' >
       <Container className="d-flex align-items-center p-0">
         <Col xs={1} sm={1} md={1} className=''>
           <Navbar.Brand href='#home' className='ms-lg-4'>
@@ -24,17 +24,6 @@ const NavigationBar = () => {
          </Nav>
        </Navbar.Collapse>
       </Navbar>
-    //   <Navbar bg="dark" variant="dark" expand="lg">
-    //   <Navbar.Brand href="#home">Your Logo</Navbar.Brand>
-    //   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end fs-3">
-    //     <Nav>
-    //       <Nav.Link href="#about" className='mx-3 fw-bold'>About</Nav.Link>
-    //       <Nav.Link href="#myworks" className='mx-3 fw-bold'>Work</Nav.Link>
-    //       <Nav.Link href="#contact" className='mx-3 fw-bold'>Contact</Nav.Link>
-    //     </Nav>
-    //   </Navbar.Collapse>
-    //  </Navbar>
      );
 }
  

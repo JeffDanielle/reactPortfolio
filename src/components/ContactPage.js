@@ -6,17 +6,19 @@ import WhatsappImg from '../images/whatsapp.png'
 import { Link } from 'react-router-dom'
 import SmartphoneImg from '../images/mobile-phone.png'
 import CopyrightImg from '../images/copyright.png';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 
 const ContactPage = () => {
-
+    const [isSending, setIsSending] = useState(false);
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        setIsSending(true);
 
     emailjs
         .sendForm(
@@ -32,13 +34,14 @@ const ContactPage = () => {
                 position: "top-end",
                 icon: "success",
                 title: "Email Sent!",
-                showConfirmButton: false,
                 timer: 1500
             });
             e.target.reset();
         }, 
         (error) => {
             console.log(error.text);
+        }).finally(() => {
+            setIsSending(false)
         });
     };
 
@@ -55,8 +58,8 @@ const ContactPage = () => {
                                 </p>
                                 <div className="mb-3 d-flex">
                                     <input className="form-control me-2" type="text" name="user_name" placeholder='Your name' required/>
-                                    <button className="btn btn-primary" type="submit">
-                                        Send
+                                    <button className="btn btn-primary" type="submit" disabled={isSending}>
+                                        { isSending ? 'Sending...' : 'Send' }
                                     </button>
                                 </div>
                                 <div className="mb-3">
