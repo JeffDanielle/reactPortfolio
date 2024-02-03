@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const homepage = () => {
     return ( 
-        <section id="home" className='mt-3' style={{ minHeight: '100vh'}}>
+        <section id="home" className='pt-5 mt-5' style={{ minHeight: '100vh'}}>
         <Container className=''>
         <Row className="d-flex justify-content-center align-items-center">
             <Col xs={8} sm={6} md={5} lg={4} className="mb-3 mb-md-5">

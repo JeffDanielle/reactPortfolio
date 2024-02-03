@@ -1,11 +1,40 @@
 import { Container, Nav, Navbar, Col} from 'react-bootstrap';
+import { useEffect } from 'react'; 
 import Image from 'react-bootstrap/Image'
 import logoImg from '../images/logo.png'
+import { motion, useAnimation } from 'framer-motion';
 // import React, { useState } from 'react';
 
 const NavigationBar = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      // console.log(scrollTop)
+      if (scrollTop > lastScrollTop){
+        // Scroll down
+        controls.start({ y: '-100%', transition: { duration: 0.3 } });
+      } else {
+        // Scroll up
+        controls.start({ y: '0%', transition: { duration: 0.3 } });
+      }
+      lastScrollTop = scrollTop
+      // console.log(lastScrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [controls])
+
     return ( 
-      <Navbar id='home' bg="dark" variant='dark' expand='lg' className='hide-navbar' >
+    <motion.div animate={controls} className='fixed-top'>
+      <Navbar bg="dark" variant='dark' expand='lg'>
       <Container className="d-flex align-items-center p-0">
         <Col xs={1} sm={1} md={1} className=''>
           <Navbar.Brand href='#home' className='ms-lg-4'>
@@ -24,6 +53,7 @@ const NavigationBar = () => {
          </Nav>
        </Navbar.Collapse>
       </Navbar>
+    </motion.div>
      );
 }
  

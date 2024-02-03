@@ -17,7 +17,7 @@ const ContactPage = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        // Set the button to disable while api is loading
         setIsSending(true);
 
     emailjs
