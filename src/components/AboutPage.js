@@ -7,7 +7,7 @@ import BootImg from '../images/bootstrap.png'
 import GitImg from '../images/github.png'
 import HtmlImg from '../images/html-5.png'
 import JsImg from '../images/js.png'
-import VueImg from '../images/vueJs.png'
+import TailwindImg from '../images/tailwind.png'
 import Image from 'react-bootstrap/Image'
 import { motion } from 'framer-motion';
 
@@ -46,7 +46,7 @@ const aboutPage = () => {
                             <div></div>
                             <Image src={HtmlImg} id='tool-img' alt="html_image" className='' />
                             <Image src={JsImg} id='tool-img' alt="js_image" className='ms-4' />
-                            <Image src={VueImg} id='tool-img' alt="js_image" className='ms-4' />
+                            <Image src={TailwindImg} id='tool-img' alt="js_image" className='ms-4' />
                         </div>
                 </Col>
             </Row>
