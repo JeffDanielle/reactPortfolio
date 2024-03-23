@@ -3,7 +3,6 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ClassroomifyImg from '../images/classroomify.png'
-import UnitsImg from '../images/units.png'
 import blackjackImg from '../images/blackjack.png'
 import todoImg from '../images/todo-list.png'
 import { Link } from 'react-router-dom'
